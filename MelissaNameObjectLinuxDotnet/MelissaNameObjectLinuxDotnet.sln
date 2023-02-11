@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MelissaDataNameObjectLinuxNETSample", "MelissaDataNameObjectLinuxNETSample.csproj", "{BFFF64DB-6189-4F25-AA50-D652387FDA4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MelissaNameObjectLinuxDotnet", "MelissaNameObjectLinuxDotnet.csproj", "{845590D3-4366-429C-B768-4E2FAD8C4912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BFFF64DB-6189-4F25-AA50-D652387FDA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFFF64DB-6189-4F25-AA50-D652387FDA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFFF64DB-6189-4F25-AA50-D652387FDA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFFF64DB-6189-4F25-AA50-D652387FDA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845590D3-4366-429C-B768-4E2FAD8C4912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845590D3-4366-429C-B768-4E2FAD8C4912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845590D3-4366-429C-B768-4E2FAD8C4912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845590D3-4366-429C-B768-4E2FAD8C4912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
