@@ -1,7 +1,6 @@
 # Melissa - Name Object Linux Dotnet
 
 ## Purpose
-
 This code showcases the Melissa Name Object using C#.
 
 Please feel free to copy or embed this code to your own project. Happy coding!
@@ -19,13 +18,11 @@ And return
 - Last Name
 - Gender
 - Salutation
-- ResultCodes
+- Result Codes
 
 ## Tested Environments
-
-- Linux 64-bit .NET 7.0, .NET 5.0, .NET Core 3.1
-- Ubuntu 20.04.05 LTS
-- Melissa data files for 2023-06
+- Linux 64-bit .NET 7.0, Ubuntu 20.04.05 LTS
+- Melissa data files for 2023-07
 
 ## Required File(s) and Programs
 
@@ -39,13 +36,9 @@ This is the code of the Melissa Object.
 - mdName.dat
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-This project is compatible with .NET 7.0, .NET 5.0, and .NET Core 3.1. If you would like to run this project for any other version besides .NET 7.0, proceed with the following procedures but check for and download your desired .NET version.
-
 #### Install the Dotnet Core SDK
-
 Before starting, check to see if you already have the .NET 7.0 SDK already installed by entering this command:
 
 `dotnet --list-sdks`
@@ -76,14 +69,12 @@ Once all of this is done, you should be able to verify that the SDK is installed
 ----------------------------------------
 
 #### Download this project
-
 ```
-$ git clone https://github.com/MelissaData/NameObject-Dotnet-Linux.git
+$ git clone https://github.com/MelissaData/NameObject-Dotnet-Linux
 $ cd NameObject-Dotnet-Linux
 ```
 
 #### Set up Melissa Updater 
-
 Melissa Updater is a CLI application allowing the user to update their Melissa applications/data. 
 
 - In the root directory of the project, create a folder called `MelissaUpdater` by using the command: 
@@ -108,29 +99,13 @@ Melissa Updater is a CLI application allowing the user to update their Melissa a
 ----------------------------------------
 
 #### Different ways to get data file(s)
-
 1.  Using Melissa Updater
 	- It will handle all of the data download/path and .so file(s) for you. 
 2.  If you already have the latest DQS Release (ZIP), you can find the data file(s) and .so file(s) in there
 	- Use the location of where you copied/installed the data and update the "DataPath" variable in the bash script.
 	- Copy all the .so file(s) mentioned above into the `MelissaNameObjectLinuxDotnet` project folder.
 	
-----------------------------------------
-
-#### Configure Target Framework
-
-Depending on your target .NET framework, you may need to configure the bash script. In order to do this, open up the `MelissaNameObjectLinuxDotnet.sh` for editing, proceed to the bottom of the script where you will find this section of code.
-
-Default set for .NET 7.0
-```
-dotnet publish -f="net7.0" -c Release -o $BuildPath  MelissaNameObjectLinuxDotnet/MelissaNameObjectLinuxDotnet.csproj
-#dotnet publish -f="net5.0" -c Release -o $BuildPath MelissaNameObjectLinuxDotnet/MelissaNameObjectLinuxDotnet.csproj
-#dotnet publish -f="netcoreapp3.1" -c Release -o $BuildPath MelissaNameObjectLinuxDotnet/MelissaNameObjectLinuxDotnet.csproj
-```
-The target framework is specified with the -f flag found in the command line. If you wish to use any version besides .NET 7.0, please uncomment the line containing that framework and comment out the line containing the .NET 7.0 framework (# to comment).
-
 #### Change Bash Script Permissions
-
 To be able to run the bash script, you must first make it an executable using the command:
 
 `chmod +x MelissaNameObjectLinuxDotnet.sh`
@@ -138,7 +113,6 @@ To be able to run the bash script, you must first make it an executable using th
 As an indicator, the filename will change colors once it becomes an executable.
 
 ## Run Bash Script
-
 Parameters:
 - -n or --name: a test name
  	
@@ -176,11 +150,9 @@ This is the expected output from a successful setup for interactive mode:
 
     
 ## Troubleshooting
-
 Troubleshooting for errors found while running your program.
 
 ### C# Errors:
-
 | Error      | Description |
 | ----------- | ----------- |
 | ErrorRequiredFileNotFound      | Program is missing a required file. Please check your Data folder and refer to the list of required files above. If you are unable to obtain all required files through the Melissa Updater, please contact technical support below. |
@@ -190,7 +162,6 @@ Troubleshooting for errors found while running your program.
 
 
 ## Contact Us
-
 For free technical support, please call us at 800-MELISSA ext. 4 (800-635-4772 ext. 4) or email us at tech@melissa.com.
 
 To purchase this product, contact the Melissa sales department at 800-MELISSA ext. 3 (800-635-4772 ext. 3).
