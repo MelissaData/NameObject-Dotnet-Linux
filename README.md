@@ -24,7 +24,7 @@ And return
 
 ## Tested Environments
 - Linux 64-bit .NET 7.0, Ubuntu 20.04.05 LTS
-- Melissa data files for 2024-03
+- Melissa data files for 2024-04
 
 ## Required File(s) and Programs
 
@@ -103,8 +103,8 @@ Melissa Updater is a CLI application allowing the user to update their Melissa a
 #### Different ways to get data file(s)
 1.  Using Melissa Updater
     - It will handle all of the data download/path and .so file(s) for you. 
-2.  If you already have the latest DQS release zip, you can find the data file(s) and .so file(s) in there
-    - Use the location of where you copied/installed the data and update the "$DataPath" variable in the bash script.
+2.  If you already have the latest DQS release zip, you can find the data file(s) in there
+    - To pass in your own data file path directory, you may either use the '--dataPath' parameter or enter the data file path directly in interactive mode.
     - Comment out this line "DownloadDataFiles $license" in the bash script.
     - This will prevent you from having to redownload all the files.
 	
@@ -117,12 +117,13 @@ As an indicator, the filename will change colors once it becomes an executable.
 
 ## Run Bash Script
 Parameters:
-- -n or --name: a test name
+- --name: a test name
  	
   This is convenient when you want to get results for a specific name in one run instead of testing multiple names in interactive mode.  
 
-- -l or --license (optional): a license string to test the Name Object
-- -q or --quiet (optional): add to the command if you do not want to get any console output from the Melissa Updater
+- --dataPath (optional): a data file path directory to test the Name Object
+- --license (optional): a license string to test the Name Object
+- --quiet (optional): add to the command if you do not want to get any console output from the Melissa Updater
 
 When you have modified the script to match your data location, let's run the script. There are two modes:
 - Interactive 
@@ -159,10 +160,7 @@ Troubleshooting for errors found while running your program.
 | Error      | Description |
 | ----------- | ----------- |
 | ErrorRequiredFileNotFound      | Program is missing a required file. Please check your Data folder and refer to the list of required files above. If you are unable to obtain all required files through the Melissa Updater, please contact technical support below. |
-| ErrorDatabaseExpired   | .db file(s) are expired. Please make sure you are downloading and using the latest release version. (If using the Melissa Updater, check the bash script for 'RELEASE_VERSION = {version}'  and change the release version if you are using an out of date release).     |
-| ErrorFoundOldFile   | File(s) are out of date. Please make sure you are downloading and using the latest release version. (If using the Melissa Updater, check the bash script for 'RELEASE_VERSION = {version}'  and change the release version if you are using an out of date release).    |
 | ErrorLicenseExpired   | Expired license string. Please contact technical support below. |
-
 
 ## Contact Us
 For free technical support, please call us at 800-MELISSA ext. 4 (800-635-4772 ext. 4) or email us at tech@melissa.com.
