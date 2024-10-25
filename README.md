@@ -24,7 +24,7 @@ And return
 
 ## Tested Environments
 - Linux 64-bit .NET 7.0, Ubuntu 20.04.05 LTS
-- Melissa data files for 2024-09
+- Melissa data files for 2024-10
 
 ## Required File(s) and Programs
 
@@ -72,8 +72,8 @@ Once all of this is done, you should be able to verify that the SDK is installed
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/NameObject-Dotnet-Linux
-$ cd NameObject-Dotnet-Linux
+git clone https://github.com/MelissaData/NameObject-Dotnet-Linux
+cd NameObject-Dotnet-Linux
 ```
 
 #### Set up Melissa Updater 
@@ -128,26 +128,26 @@ Parameters:
 When you have modified the script to match your data location, let's run the script. There are two modes:
 - Interactive 
 
-	The script will prompt the user for a name, then use the provided name to test Name Object. For example:
-	```
-	$ ./MelissaNameObjectLinuxDotnet.sh
-	```
-    For quiet mode:
-    ```
-    $ ./MelissaNameObjectLinuxDotnet.sh --quiet
-    ```
+  The script will prompt the user for a name, then use the provided name to test Name Object. For example:
+  ```
+  ./MelissaNameObjectLinuxDotnet.sh
+  ```
+  For quiet mode:
+  ```
+  ./MelissaNameObjectLinuxDotnet.sh --quiet
+  ```
 - Command Line 
 
-	You can pass a name in ```--name``` parameter and a license string in ```--license``` parameter to test Name Object. For example:
-	```
-    $ ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa"
-    $ ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa" --license "<your_license_string>"
-    ```
-	For quiet mode:
-    ```
-    $ ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa" --quiet
-    $ ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa" --license "<your_license_string>" --quiet
-    ```
+  You can pass a name in ```--name``` parameter and a license string in ```--license``` parameter to test Name Object. For example:
+  ```
+  ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa"
+  ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa" --license "<your_license_string>"
+  ```
+  For quiet mode:
+  ```
+  ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa" --quiet
+  ./MelissaNameObjectLinuxDotnet.sh --name "Ray Melissa" --license "<your_license_string>" --quiet
+  ```
 This is the expected output from a successful setup for interactive mode:
 
 ![alt text](/screenshots/output.png)
