@@ -52,7 +52,7 @@ while [ $# -gt 0 ] ; do
 done
 
 # ######################### Config ###########################
-RELEASE_VERSION='2025.05'
+RELEASE_VERSION='2025.06'
 ProductName="DQ_NAME_DATA"
 
 # Uses the location of the .sh file 
@@ -242,7 +242,7 @@ printf "\nAll file(s) have been downloaded/updated!\n"
 # Build project
 printf "\n=========================== BUILD PROJECT ==========================\n"
 
-dotnet publish -f="net7.0" -c Release -o $BuildPath  MelissaNameObjectLinuxDotnet/MelissaNameObjectLinuxDotnet.csproj
+dotnet publish -f="net8.0" -c Release -o $BuildPath  MelissaNameObjectLinuxDotnet/MelissaNameObjectLinuxDotnet.csproj
 
 # Run project
 if [ -z "$name" ];
